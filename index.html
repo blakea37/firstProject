@@ -48,12 +48,12 @@
         function getOperation(op){
             operation = this.value;
             console.log(op.value);
-            if(op.value == "Add Multiply"){
-                operation = "Add"
+            if(op.value == "Add"){
+                operation = "Add"    
+            }
+            if(op.value == "Multiply"){
                 operation = "Multiply"
-                }else{
-                    operation = "Subtract";
-                }
+            }
         }
       function enter(){
           number1 = document.getElementById("num1").value;
@@ -64,13 +64,9 @@
 
           if(operation == "Add"){
           alert(number1 + number2);
-          }else{
-              alert(number1 - number2);
           }
           if(operation == "Multiply"){
           alert(number1 * number2);
-          }else{
-              alert(number1 - number2);
           }
 
       }
