@@ -36,6 +36,7 @@
   <button id="Add" onClick="getOperation(Add)" value="Add">Add</button>
   <button id="Subtract" onClick="getOperation(Subtract)" value="Subract">Subtract</button>
   <button id="Multiply" onClick="getOperation(Multiply)" value="Multiply">Multiply</button>
+  <button id="Divide" onClick="getOperation(Divide)" value="Divide">Divide</button>
   <button onClick="enter()">Enter</button>
   </body>
   
@@ -54,6 +55,10 @@
             if(op.value == "Multiply"){
                 operation = "Multiply"
             }
+            if(op.value == "Divide"){
+                operation = "Divide"
+            }
+
         }
       function enter(){
           number1 = document.getElementById("num1").value;
@@ -67,6 +72,9 @@
           }
           if(operation == "Multiply"){
           alert(number1 * number2);
+          }
+          if(operation == "Divide"){
+          alert(number1 / number2);
           }
 
       }
@@ -86,7 +94,16 @@
           var one = Number.parseInt(number1)
           var two = Number.parseInt(number2)
 
-          alert(number1 + " * " + number2 + " * " + (one*two))
+          alert(number1 + " * " + number2 + " = " + (one*two))
+      }
+      function divide(){
+          console.log("divide");
+          alert(typeof(number1))
+
+          var one = Number.parseInt(number1)
+          var two = Number.parseInt(number2)
+
+          alert(number1 + " / " + number2 + " = " + (one/two))
       }
       var a = 0;
       var b = 3;
