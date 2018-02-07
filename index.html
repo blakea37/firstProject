@@ -58,6 +58,9 @@
             if(op.value == "Divide"){
                 operation = "Divide"
             }
+            if(op.value == "Subract"){
+                operation = "Subtract"
+            }
 
         }
       function enter(){
@@ -76,7 +79,9 @@
           if(operation == "Divide"){
           alert(number1 / number2);
           }
-
+          if(operation == "Subract"){
+          alert(number1 - number2);
+          }
       }
       function add(){
           console.log("add");
@@ -104,6 +109,15 @@
           var two = Number.parseInt(number2)
 
           alert(number1 + " / " + number2 + " = " + (one/two))
+      }
+      function subtract(){
+          console.log("subtract");
+          alert(typeof(number1))
+
+          var one = Number.parseInt(number1)
+          var two = Number.parseInt(number2)
+
+          alert(number1 + " - " + number2 + " = " + (one-two))
       }
       var a = 0;
       var b = 3;
