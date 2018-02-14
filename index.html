@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <style>
       p{
@@ -24,8 +25,8 @@
       }
   </style>
   <body>
-          <div class="row">
-          <div class="col-md-4">
+    <div class="row">
+        <div class="col-md-4">
           <img src="https://lh3.ggpht.com/RxBo2UsSsqNWyZfH8Avfpu3UIrqSMm8b4pcTp7Rds1ibK2UkTYN-BcwctN8KUx3QwA=w170" class="img-responsive" alt="Calculator image">
         </div>
         <div class="col-md-8">
@@ -41,7 +42,6 @@
       <li>Multipication</li>
       <li>Division</li>
   </ul>
-  <div>
     <div class="row">
   <h3>Type a number: </h3><input id="num1"></input>
   <h3>Type a number: </h3><input id="num2"></input>
@@ -55,89 +55,19 @@
   </body>
   
   <script>
+      var apples = 4;
+      var oranges = 4;
 
-    var number1;
-    var number2;
-    var operation;
-
-        function getOperation(op){
-            operation = this.value;
-            console.log(op.value);
-            if(op.value == "Add"){
-                operation = "Add"    
-            }
-            if(op.value == "Multiply"){
-                operation = "Multiply"
-            }
-            if(op.value == "Divide"){
-                operation = "Divide"
-            }
-            if(op.value == "Subtract"){
-                operation = "Subtract"
-            }
-
-        }
-      function enter(){
-          number1 = document.getElementById("num1").value;
-          number2 = document.getElementById("num2").value;
-
-          number1 = parseInt(number1);
-          number2 = parseInt(number2);
-
-          if(operation == "Add"){
-          alert(number1 + number2);
-          }
-          if(operation == "Multiply"){
-          alert(number1 * number2);
-          }
-          if(operation == "Divide"){
-          alert(number1 / number2);
-          }
-          if(operation == "Subtract"){
-          alert(number1 - number2);
-          }
-      }
-      function add(){
-          console.log("add");
-          alert(typeof(number1))
-
-          var one = Number.parseInt(number1)
-          var two = Number.parseInt(number2)
-
-          alert(number1 + " + " + number2 + " = " + (one+two))
-      }
-      function multiply(){
-          console.log("multiply");
-          alert(typeof(number1))
-
-          var one = Number.parseInt(number1)
-          var two = Number.parseInt(number2)
-
-          alert(number1 + " * " + number2 + " = " + (one*two))
-      }
-      function divide(){
-          console.log("divide");
-          alert(typeof(number1))
-
-          var one = Number.parseInt(number1)
-          var two = Number.parseInt(number2)
-
-          alert(number1 + " / " + number2 + " = " + (one/two))
-      }
       function subtract(){
-          console.log("subtract");
-          alert(typeof(number1))
-
-          var one = Number.parseInt(number1)
-          var two = Number.parseInt(number2)
-
-          alert(number1 + " - " + number2 + " = " + (one-two))
+          console.log(apples - oranges);
       }
-      var a = 0;
-      var b = 3;
-      var c = 6;
+      
+      function enter(){
+          console.log(apples + oranges);
+      }
+       enter()
+       subtract()
 
-      var d = b + c;
 
   </script>
 </html>
