@@ -25,7 +25,7 @@
       }
   </style>
   <body>
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-md-4">
           <img src="https://lh3.ggpht.com/RxBo2UsSsqNWyZfH8Avfpu3UIrqSMm8b4pcTp7Rds1ibK2UkTYN-BcwctN8KUx3QwA=w170" class="img-responsive" alt="Calculator image">
         </div>
@@ -51,22 +51,40 @@
   <button id="Divide" onClick="getOperation(Divide)" value="Divide">Divide</button>
   <button onClick="enter()">Enter</button>
     </div>
-  </div>
+  </div> -->
+
+  <button class="btn btn-danger" onClick="clickNumber(1)">1</button>
+  <button class="btn btn-danger" onClick="clickNumber(2)">2</button>
+  <button class="btn btn-danger" onClick="clickNumber(3)">3</button>
+  <button class="btn btn-danger" onClick="clickNumber(4)">4</button>
+  <button class="btn btn-danger" onClick="clickNumber(5)">5</button>
+  <button class="btn btn-danger" onClick="clickNumber(6)">6</button>
+  <button class="btn btn-danger" onClick="clickNumber(7)">7</button>
+  <button class="btn btn-danger" onClick="clickNumber(8)">8</button>
+  <button class="btn btn-danger" onClick="clickNumber(9)">9</button>
+  <button class="btn btn-danger" onClick="clickNumber(0)">0</button>
+
+
+
   </body>
   
   <script>
-      var apples = 4;
-      var oranges = 4;
+    //   var apples = 4;
+    //   var oranges = 4;
 
-      function subtract(){
-          console.log(apples - oranges);
-      }
+    //   function subtract(){
+    //       console.log(apples - oranges);
+    //   }
       
-      function enter(){
-          console.log(apples + oranges);
-      }
-       enter()
-       subtract()
+    //   function enter(){
+    //       console.log(apples + oranges);
+    //   }
+    //    enter();
+    //    subtract();
+
+    function clickNumber(num){
+        console.log(num);
+    }
 
 
   </script>
