@@ -52,6 +52,8 @@
   <button onClick="enter()">Enter</button>
     </div>
   </div> -->
+<div style="text-align: center; padding-top: 40%">
+  <input id="currentValue" />
 
   <button class="btn btn-danger" onClick="clickNumber(1)">1</button>
   <button class="btn btn-danger" onClick="clickNumber(2)">2</button>
@@ -64,6 +66,9 @@
   <button class="btn btn-danger" onClick="clickNumber(9)">9</button>
   <button class="btn btn-danger" onClick="clickNumber(0)">0</button>
 
+  <button class="btn btn-success" onClick="addition()">+</button>
+  <button class="btn btn-primary" onClick="equals()">=</button>
+</div>
 
 
   </body>
@@ -81,11 +86,37 @@
     //   }
     //    enter();
     //    subtract();
+    var currentNumber;
+    var operation;
+    var firstValue;
+    var secondValue;
+    
 
     function clickNumber(num){
-        console.log(num);
+        var inputElement = document.getElementById("currentValue");
+        
+        inputElement.value = inputElement.value + num;
+
+        secondValue = num;
     }
 
+    function addition(){
+       operation = "+";
+       var inputElement = document.getElementById("currentValue");
 
+
+       firstValue = parseInt(inputElement.value);
+       inputElement.value = inputElement.value + "+";
+
+    }
+
+    function equals(){
+        var inputElement = document.getElementById("currentValue");
+
+        if(operation = "+"){
+            inputElement.value = firstValue + secondValue;
+        }
+
+    }
   </script>
 </html>
