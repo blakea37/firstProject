@@ -69,7 +69,7 @@
   <button class="btn btn-success" onClick="addition()">+</button>
   <button class="btn btn-success" onClick="subtraction()">-</button>
   <button class="btn btn-success" onClick="multiply()">*</button>
-  <button class="btn btn-success" onClick="divide()">/</button>"
+  <button class="btn btn-success" onClick="divide()">/</button>
   <button class="btn btn-primary" onClick="equals()">=</button>
 </div>
 
@@ -144,11 +144,15 @@
 
         if(operation = "+"){
             inputElement.value = firstValue + secondValue;
-            inputElement.value = firstValue - secondValue;
-            inputElement.value = firstValue * secondValue;
-            inputElement.value = firstValue / secondValue;
         }
-
-    }
+        if(operation = "-"){
+            inputElement.value = firstValue - secondValue;
+        }
+        if(operation = "*"){
+          inputElement.value = firstValue * secondValue;
+        }
+        if(operation = "/"){
+          inputElement.value = firstValue / secondValue;
+        }
   </script>
 </html>
