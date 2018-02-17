@@ -68,6 +68,8 @@
 
   <button class="btn btn-success" onClick="addition()">+</button>
   <button class="btn btn-success" onClick="subtraction()">-</button>
+  <button class="btn btn-success" onClick="multiply()">*</button>
+  <button class="btn btn-success" onClick="divide()">/</button>"
   <button class="btn btn-primary" onClick="equals()">=</button>
 </div>
 
@@ -120,6 +122,22 @@
       inputElement.value = inputElement.value + "-";
 
     }
+    
+    function multiply(){
+      operation = "*";
+      var inputElement = document.getElementById("curentValue");
+
+      firstValue = parseInt(inputElement.value);
+      inputElement.value = inputElement.value + "*";
+    }
+
+    function multiply(){
+      operation = "/";
+      var inputElement = document.getElementById("currentValue");
+
+      firstValue = parseInt(inputElement.value);
+      inputelement.value = inputElement.value + "/";
+    }
 
     function equals(){
         var inputElement = document.getElementById("currentValue");
@@ -127,6 +145,8 @@
         if(operation = "+"){
             inputElement.value = firstValue + secondValue;
             inputElement.value = firstValue - secondValue;
+            inputElement.value = firstValue * secondValue;
+            inputElement.value = firstValue / secondValue;
         }
 
     }
