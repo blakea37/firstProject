@@ -111,11 +111,22 @@
 
     }
 
+    function subtraction(){
+      operation = "-";
+      var inputElement = document.getElementById("currentValue");
+
+
+      firstValue = parseInt(inputElement.value);
+      inputElement.value = inputElement.value + "-";
+
+    }
+
     function equals(){
         var inputElement = document.getElementById("currentValue");
 
         if(operation = "+"){
             inputElement.value = firstValue + secondValue;
+            inputElement.value = firstValue - secondValue;
         }
 
     }
