@@ -97,7 +97,7 @@
 
     function clickNumber(num){
         var inputElement = document.getElementById("currentValue");
-    
+        
         inputElement.value = inputElement.value + num;
 
         secondValue = num;
@@ -106,7 +106,6 @@
     function addition(){
        operation = "+";
        var inputElement = document.getElementById("currentValue");
-
 
        firstValue = parseInt(inputElement.value);
        inputElement.value = inputElement.value + "+";
@@ -145,14 +144,14 @@
         if(operation = "+"){
             inputElement.value = firstValue + secondValue;
         }
-        if(operation = "-"){
-            inputElement.value = firstValue - secondValue;
-        }
-        if(operation = "*"){
-          inputElement.value = firstValue * secondValue;
-        }
-        if(operation = "/"){
-          inputElement.value = firstValue / secondValue;
+        // if(operation = "-"){
+        //     inputElement.value = firstValue - secondValue;
+        // }
+        // if(operation = "*"){
+        //   inputElement.value = firstValue * secondValue;
+        // }
+        // if(operation = "/"){
+        //   inputElement.value = firstValue / secondValue;
         }
   </script>
 </html>
